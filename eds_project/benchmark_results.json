@@ -1,0 +1,122 @@
+{
+  "key_metrics": {
+    "RSA-2048": {
+      "keygen_ms": 65.226,
+      "priv_pem_bytes": 1708,
+      "priv_enc_pem_bytes": 1886,
+      "pub_pem_bytes": 451,
+      "signature_bytes": 256
+    },
+    "RSA-4096": {
+      "keygen_ms": 576.809,
+      "priv_pem_bytes": 3268,
+      "priv_enc_pem_bytes": 3446,
+      "pub_pem_bytes": 800,
+      "signature_bytes": 512
+    },
+    "ECDSA": {
+      "keygen_ms": 0.4,
+      "priv_pem_bytes": 241,
+      "priv_enc_pem_bytes": 412,
+      "pub_pem_bytes": 178,
+      "signature_bytes": 72
+    },
+    "Ed25519": {
+      "keygen_ms": 0.078,
+      "priv_pem_bytes": 119,
+      "priv_enc_pem_bytes": 302,
+      "pub_pem_bytes": 113,
+      "signature_bytes": 64
+    }
+  },
+  "performance_by_size": {
+    "10 KB": {
+      "RSA-2048": {
+        "sign_ms": 34.464,
+        "verify_ms": 0.283,
+        "valid": true
+      },
+      "RSA-4096": {
+        "sign_ms": 234.895,
+        "verify_ms": 0.109,
+        "valid": true
+      },
+      "ECDSA": {
+        "sign_ms": 0.082,
+        "verify_ms": 0.095,
+        "valid": true
+      },
+      "Ed25519": {
+        "sign_ms": 0.091,
+        "verify_ms": 0.113,
+        "valid": true
+      }
+    },
+    "1 MB": {
+      "RSA-2048": {
+        "sign_ms": 34.655,
+        "verify_ms": 0.582,
+        "valid": true
+      },
+      "RSA-4096": {
+        "sign_ms": 236.816,
+        "verify_ms": 0.639,
+        "valid": true
+      },
+      "ECDSA": {
+        "sign_ms": 0.615,
+        "verify_ms": 0.622,
+        "valid": true
+      },
+      "Ed25519": {
+        "sign_ms": 2.314,
+        "verify_ms": 1.251,
+        "valid": true
+      }
+    },
+    "10 MB": {
+      "RSA-2048": {
+        "sign_ms": 39.399,
+        "verify_ms": 5.177,
+        "valid": true
+      },
+      "RSA-4096": {
+        "sign_ms": 238.13,
+        "verify_ms": 5.343,
+        "valid": true
+      },
+      "ECDSA": {
+        "sign_ms": 5.451,
+        "verify_ms": 5.623,
+        "valid": true
+      },
+      "Ed25519": {
+        "sign_ms": 23.206,
+        "verify_ms": 11.972,
+        "valid": true
+      }
+    },
+    "50 MB": {
+      "RSA-2048": {
+        "sign_ms": 61.858,
+        "verify_ms": 26.791,
+        "valid": true
+      },
+      "RSA-4096": {
+        "sign_ms": 261.654,
+        "verify_ms": 26.826,
+        "valid": true
+      },
+      "ECDSA": {
+        "sign_ms": 26.882,
+        "verify_ms": 27.667,
+        "valid": true
+      },
+      "Ed25519": {
+        "sign_ms": 136.381,
+        "verify_ms": 57.895,
+        "valid": true
+      }
+    }
+  }
+}
