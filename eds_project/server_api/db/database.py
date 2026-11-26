@@ -3,7 +3,8 @@ from datetime import datetime, timezone
 from sqlalchemy import create_engine, inspect, text
 from sqlalchemy.orm import declarative_base, sessionmaker
 
-_DEFAULT_DB_URL = "postgresql://postgres:5374@localhost:5432/eds_db"
+_DB_PASSWORD = os.environ.get("EDS_DB_PASSWORD", "")
+_DEFAULT_DB_URL = f"postgresql://postgres:{_DB_PASSWORD}@localhost:5432/eds_db"
 SQLALCHEMY_DATABASE_URL = os.environ.get("DATABASE_URL", _DEFAULT_DB_URL)
 
 connect_args = {"check_same_thread": False} if "sqlite" in SQLALCHEMY_DATABASE_URL else {}
